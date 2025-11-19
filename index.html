@@ -385,112 +385,511 @@
                 </p>
             </div>
 
-            <!-- Appetizers -->
-            <div class="mb-16 fade-in">
-                <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
-                    <span class="text-2xl text-[#B99F85] japanese">おつまみ</span>
-                    Aperitivos • Appetizers
-                </h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Ágedashi <span class="japanese">揚げ出し</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Fried mochi or silken tofu in dashi broth</p>
-                        <p class="text-[#B99F85] font-light">$12</p>
+            <!-- Menu Navigation Tabs -->
+            <div class="text-center mb-12 fade-in">
+                <div class="inline-flex gap-4 flex-wrap justify-center">
+                    <button onclick="showMenuSection('food')" id="food-tab" class="btn-secondary px-6 py-3">Food Menu</button>
+                    <button onclick="showMenuSection('beverages')" id="beverages-tab" class="btn-secondary px-6 py-3">Beverage Menu</button>
+                </div>
+            </div>
+
+            <!-- FOOD MENU -->
+            <div id="food-menu" class="menu-section">
+                <!-- Appetizers -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">おつまみ</span>
+                        Aperitivos • Appetizers
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Ágedashi <span class="japanese">揚げ出し</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Fried mochi (rice cake) or silken tofu in a dashi broth (3 ea)</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kani Cream Kórokke <span class="japanese">カニ・クリーム・コロッケ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Lump crab creamy croquettes (3 ea)</p>
+                            <p class="text-[#B99F85] font-light">$15</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Gyōza <span class="japanese">餃子</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">House made pork gyoza with cabbage, mushrooms, & garlic chives (6 ea)</p>
+                            <p class="text-[#B99F85] font-light">$14</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kémuri Sárada <span class="japanese">煙サラダ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">House salad: green cabbage, spring mix, tomatoes, cucumber, red onion<br>
+                            <span class="text-xs">Dressings: ginger carrot, creamy roasted sesame or Wafū (Japanese vinaigrette)</span></p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
                     </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kani Cream Kórokke <span class="japanese">カニ・クリーム・コロッケ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Lump crab creamy croquettes (3 ea)</p>
-                        <p class="text-[#B99F85] font-light">$15</p>
+                </div>
+
+                <!-- From the Fryer -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">揚げ物</span>
+                        De la Freidora • From the Frier
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Rōs Katsu <span class="japanese">ロースかつ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Fresh panko-breaded pork loin, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hiré Katsu <span class="japanese">ヒレかつ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Fresh panko-breaded pork tenderloin, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $28 / Regular $22</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Tóri Katsu <span class="japanese">鳥かつ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Fresh panko-breaded chicken breast, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kará'age <span class="japanese">鳥の唐揚げ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese-style marinated fried chicken, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+                        </div>
                     </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Gyōza <span class="japanese">餃子</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">House made pork gyoza with cabbage & mushrooms (6 ea)</p>
-                        <p class="text-[#B99F85] font-light">$14</p>
+                </div>
+
+                <!-- Pan Seared -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">焼き物</span>
+                        Al Sartén • Pan Seared
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hiré Yakí <span class="japanese">ヒレ焼き</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Pork tenderloin in house's specialty butter sauce, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $28 / Regular $22</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Tori Yakí <span class="japanese">鳥焼き</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Chicken thighs in house's specialty butter sauce, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Shōga Yakí <span class="japanese">生姜焼き</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Pork loin in house's specialty ginger and Daikon radish sauce, garden salad</p>
+                            <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Yakijáke <span class="japanese">焼き鮭</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Crispy skin salmon in a white miso and ginger sauce, green onions, and sesame seeds</p>
+                            <p class="text-[#B99F85] font-light">Set $29 / Regular $23</p>
+                        </div>
                     </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kémuri Sárada <span class="japanese">煙サラダ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">House salad with choice of dressing</p>
-                        <p class="text-[#B99F85] font-light">$12</p>
+                </div>
+
+                <!-- Simmered -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">煮物</span>
+                        Al Fuego Lento • Simmered
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Butá no Kákuni <span class="japanese">豚の角煮</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Tender pork belly simmered in semi-sweet soy broth, asparagus, soft boiled egg</p>
+                            <p class="text-[#B99F85] font-light">Set $26 / Regular $18</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- With Rice -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">飯物</span>
+                        Con Arroz • With Rice
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Katsu Don <span class="japanese">かつ丼</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Breaded pork loin in soy broth, egg, onion, & green onions over a bed of white rice</p>
+                            <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Karē Rice <span class="japanese">カレーライス</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese style curry, white rice, sweet & sour pickles – choose between vegetables or beef chuck</p>
+                            <p class="text-[#B99F85] font-light">Set $22 / Regular $18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Katsu Karē <span class="japanese">かつカレー</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Breaded pork loin over white rice and beef curry</p>
+                            <p class="text-[#B99F85] font-light">Set $30 / Regular $26</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kara'age Karē <span class="japanese">唐揚げカレー</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese-style fried chicken over a bed of white rice and beef curry</p>
+                            <p class="text-[#B99F85] font-light">Set $30 / Regular $26</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Yaki Meshi <span class="japanese">焼き飯</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese-style fried rice: egg, onions, carrots, mushrooms & scallions</p>
+                            <p class="text-[#B99F85] font-light">$14</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Shiro Góhan <span class="japanese">白ご飯</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Koshihikari white rice</p>
+                            <p class="text-[#B99F85] font-light">$6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kid's Menu -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">子供のメニュー</span>
+                        Kid's Menu
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kara Kids</h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese fried chicken with rice ball</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Mini Curry</h4>
+                            <p class="text-sm text-[#737373] mb-3">Our classic beef curry but in a smaller portion</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soups -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">汁物</span>
+                        Sopas • Soup
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">O-Miso Shiru <span class="japanese">お味噌汁</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">White miso soup made with fish stock and sea kelp</p>
+                            <p class="text-[#B99F85] font-light">$8</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Corn Potage <span class="japanese">コーン・ポタージュ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Corn soup, bread croutons, parsley</p>
+                            <p class="text-[#B99F85] font-light">$8</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">甘物</span>
+                        Postres • Dessert
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kuró Gomá Purin <span class="japanese">黒胡麻プリン</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Black sesame panacotta with sweet cream on top</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Mochi Parfait <span class="japanese">餅パフェ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Kinako (roasted soy bean flour) or Matcha ice cream, mochi, black honey</p>
+                            <p class="text-[#B99F85] font-light">$13</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- From the Fryer -->
-            <div class="mb-16 fade-in">
-                <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
-                    <span class="text-2xl text-[#B99F85] japanese">揚げ物</span>
-                    De la Freidora • From the Frier
-                </h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Rōs Katsu <span class="japanese">ロースかつ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Fresh panko-breaded pork loin, garden salad</p>
-                        <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
-                    </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hiré Katsu <span class="japanese">ヒレかつ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Fresh panko-breaded pork tenderloin, garden salad</p>
-                        <p class="text-[#B99F85] font-light">Set $28 / Regular $22</p>
-                    </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Tóri Katsu <span class="japanese">鳥かつ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Fresh panko-breaded chicken breast, garden salad</p>
-                        <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
-                    </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Karā'age <span class="japanese">鳥の唐揚げ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Japanese-style marinated fried chicken, garden salad</p>
-                        <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
+            <!-- BEVERAGE MENU -->
+            <div id="beverages-menu" class="menu-section" style="display: none;">
+                <!-- Juices -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">果汁</span>
+                        Jugos • Juice
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Limonada <span class="japanese">レモネード</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Lemonade</p>
+                            <p class="text-[#B99F85] font-light">$6</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Jugo de toronja rosada <span class="japanese">グレープフルーツ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Pink grapefruit juice</p>
+                            <p class="text-[#B99F85] font-light">$7</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- With Rice -->
-            <div class="mb-16 fade-in">
-                <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
-                    <span class="text-2xl text-[#B99F85] japanese">飯物</span>
-                    Con Arroz • With Rice
-                </h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Katsu Don <span class="japanese">かつ丼</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Breaded pork loin in soy broth, egg, onion over rice</p>
-                        <p class="text-[#B99F85] font-light">Set $24 / Regular $18</p>
-                    </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Karē Rice <span class="japanese">カレーライス</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Japanese curry with vegetables or beef</p>
-                        <p class="text-[#B99F85] font-light">Set $22 / Regular $18</p>
-                    </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Katsu Karē <span class="japanese">かつカレー</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Breaded pork loin over white rice and beef curry</p>
-                        <p class="text-[#B99F85] font-light">Set $30 / Regular $26</p>
-                    </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Yaki Meshi <span class="japanese">焼き飯</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Japanese-style fried rice: egg, onions, carrots, mushrooms</p>
-                        <p class="text-[#B99F85] font-light">$14</p>
+                <!-- Tea -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">お茶</span>
+                        Té • Tea
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Ryok Cha <span class="japanese">緑茶</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese green tea leaves, fresh-brewed hot or cold brew</p>
+                            <p class="text-[#B99F85] font-light">Caliente $4 / Mizudashi $4</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Ūróng Cha <span class="japanese">烏龍茶</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Oolong tea, fresh-brewed hot or cold brew</p>
+                            <p class="text-[#B99F85] font-light">Caliente $4 / Mizudashi $4</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Desserts -->
-            <div class="fade-in">
-                <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
-                    <span class="text-2xl text-[#B99F85] japanese">甘物</span>
-                    Postres • Dessert
-                </h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kuró Gomá Purin <span class="japanese">黒胡麻プリン</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Black sesame panacotta with sweet cream</p>
-                        <p class="text-[#B99F85] font-light">$12</p>
+                <!-- Sodas -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">ソーダー</span>
+                        Sodas
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Calpis <span class="japanese">カルピス</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">A yogurt based drink (Calpico)</p>
+                            <p class="text-[#B99F85] font-light">$6</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Calpis Soda <span class="japanese">カルピスソーダ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Calpico with soda</p>
+                            <p class="text-[#B99F85] font-light">$6</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Lámune <span class="japanese">ラムネ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Bubble-gum flavored soda pop</p>
+                            <p class="text-[#B99F85] font-light">$8</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Agua Fiji</h4>
+                            <p class="text-[#B99F85] font-light">$5</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Perrier</h4>
+                            <p class="text-[#B99F85] font-light">$4</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Coca-Cola</h4>
+                            <p class="text-[#B99F85] font-light">$3</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Sprite</h4>
+                            <p class="text-[#B99F85] font-light">$3</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Ginger Ale</h4>
+                            <p class="text-[#B99F85] font-light">$3</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Coca-Cola Zero</h4>
+                            <p class="text-[#B99F85] font-light">$3</p>
+                        </div>
                     </div>
-                    <div class="menu-card p-6 rounded-sm">
-                        <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Mochi Parfait <span class="japanese">餅パフェ</span></h4>
-                        <p class="text-sm text-[#737373] mb-3">Kinako or Matcha ice cream, mochi, black honey</p>
-                        <p class="text-[#B99F85] font-light">$13</p>
+                </div>
+
+                <!-- Beer -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">ビール</span>
+                        Bīru • Cerveza
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Asahi</h4>
+                            <p class="text-[#B99F85] font-light">$6</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Sapporo / Sapporo Light</h4>
+                            <p class="text-[#B99F85] font-light">$6.50</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Echigo Koshihikari</h4>
+                            <p class="text-sm text-[#737373] mb-3">Rice lager</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Echigo Weizen</h4>
+                            <p class="text-sm text-[#737373] mb-3">Wheat and malt barley craft</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Orion (Double bottle)</h4>
+                            <p class="text-sm text-[#737373] mb-3">Okinawan beer</p>
+                            <p class="text-[#B99F85] font-light">$24</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wine -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">ワイン</span>
+                        Wine • Vino
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Soplo, Garnacha</h4>
+                            <p class="text-sm text-[#737373] mb-3">Tinto, España / Red, Spain</p>
+                            <p class="text-[#B99F85] font-light">Glass $10 / Bottle $30</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Coer du Mont, Pinot Noir 2022</h4>
+                            <p class="text-sm text-[#737373] mb-3">Francia, Tinto / France, Red</p>
+                            <p class="text-[#B99F85] font-light">Glass $12 / Bottle $35</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Montrubi Serres Velles 2020</h4>
+                            <p class="text-sm text-[#737373] mb-3">Garnacha negra, España / Black grenache, Spain</p>
+                            <p class="text-[#B99F85] font-light">Bottle $40</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Born Rosé, Barcelona</h4>
+                            <p class="text-sm text-[#737373] mb-3">Rosado, Tempranillo & Garnacha negra / Blush, Tempranillo & Grenache Noir</p>
+                            <p class="text-[#B99F85] font-light">Glass $12 / Bottle $42</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Villa Sandi, Pinot Grigio</h4>
+                            <p class="text-sm text-[#737373] mb-3">Blanco, Italia / White, Italy</p>
+                            <p class="text-[#B99F85] font-light">Glass $10 / Bottle $35</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Murgas Arinto 2018</h4>
+                            <p class="text-sm text-[#737373] mb-3">Blanco, Portugal / White, Portugal</p>
+                            <p class="text-[#B99F85] font-light">Bottle $45</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">La Marca Prosecco</h4>
+                            <p class="text-sm text-[#737373] mb-3">Vino espumoso / Sparkling wine</p>
+                            <p class="text-[#B99F85] font-light">Glass $12 / Bottle $35</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Whisky -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">ウィスキー</span>
+                        Whisky
+                    </h3>
+                    <p class="text-sm text-[#737373] mb-6">¿Cómo lo quieres? 呑み方 How would you like it? • Storēto • Rock'ku • Mizuwarí • Oyuwarí</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Suntory Toki <span class="japanese">季</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Japanese whisky</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kaiyō Whisky The Single (7 Years)</h4>
+                            <p class="text-[#B99F85] font-light">$16</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kaiyō Whisky The Signature</h4>
+                            <p class="text-[#B99F85] font-light">$18</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kaiyō Whisky The Peated</h4>
+                            <p class="text-[#B99F85] font-light">$23</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kaiyō Whisky Cask Strength</h4>
+                            <p class="text-[#B99F85] font-light">$23</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kaiyō Whisky Flight <span class="japanese">海洋ウイスキーフライト</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">A tasting of each of Kaiyō Whisky selection</p>
+                            <p class="text-[#B99F85] font-light">$18</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cocktails -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">カクテル</span>
+                        Cocteles • Cocktails
+                    </h3>
+                    <p class="text-base text-[#737373] mb-6 font-light italic">Japanese inspired cocktails</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Yogoretini <span class="japanese">汚れチニ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Gin, Dry Vermouth, Fukujinzuke Pickles Brine (soy sauce, mirin & vinegar)</p>
+                            <p class="text-[#B99F85] font-light">$16</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Ume Spritz <span class="japanese">梅スプリツ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Plum Wine, Prosecco, Carbonated water</p>
+                            <p class="text-[#B99F85] font-light">$13</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Golden Sake Sangria <span class="japanese">ゴールデン酒サングリア</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Sake, cognac, lychee puree, yuzu lemon</p>
+                            <p class="text-[#B99F85] font-light">$14</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Kará'rita <span class="japanese">辛リタ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Mezcal, Triple Sec, spicy agave, lime, Shichimi (7 spice chilli powder)</p>
+                            <p class="text-[#B99F85] font-light">$14</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Japanese Old Fashioned <span class="japanese">オールドファッション</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Toki Whisky, orange and yuzu lemon bitters</p>
+                            <p class="text-[#B99F85] font-light">$16</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Matchateani <span class="japanese">抹茶チニ</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Ceremonial matcha, Vodka, white chocolate</p>
+                            <p class="text-[#B99F85] font-light">$15</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Toki Highball <span class="japanese">ハイボール</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Toki whisky with soda water</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hakata Mule <span class="japanese">博多ミュール</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Vodka, yuzu lemon, fresh ginger, ginger ale</p>
+                            <p class="text-[#B99F85] font-light">$12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sake -->
+                <div class="fade-in">
+                    <h3 class="text-3xl font-light mb-8 text-[#1A1A1A] flex items-center gap-4">
+                        <span class="text-2xl text-[#B99F85] japanese">日本酒</span>
+                        Nihónshu (SAKE)
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Dassai 45 <span class="japanese">獺祭４５</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Junmai Daiginjou, 300ml</p>
+                            <p class="text-[#B99F85] font-light">$45</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hitori Músume Nigori <span class="japanese">一人娘 にごり酒</span></h4>
+                            <p class="text-sm text-[#737373] mb-3">Junmai Nigori, 300ml</p>
+                            <p class="text-[#B99F85] font-light">$40</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hakutsuru Superior Junmai Ginjo</h4>
+                            <p class="text-[#B99F85] font-light">$30</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Hakutsuru Sayuri Nigori</h4>
+                            <p class="text-sm text-[#737373] mb-3">Unfiltered</p>
+                            <p class="text-[#B99F85] font-light">$30</p>
+                        </div>
+                        <div class="menu-card p-6 rounded-sm">
+                            <h4 class="text-xl font-light mb-2 text-[#1A1A1A]">Meibo Yowano Tsuki Junmai Ginjo</h4>
+                            <p class="text-sm text-[#737373] mb-3">500ml</p>
+                            <p class="text-[#B99F85] font-light">$65</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -499,7 +898,7 @@
                 <p class="text-base text-[#737373] font-light mb-6">
                     Set meals include rice and soup • Limited parking available
                 </p>
-                <a href="tel:787-998-5004" class="btn-primary">Call for Full Menu</a>
+                <a href="tel:787-998-5004" class="btn-primary">Call for Reservations</a>
             </div>
         </div>
     </section>
@@ -855,6 +1254,33 @@
         }
 
         animateSmoke();
+
+        // Menu Section Toggle
+        function showMenuSection(section) {
+            const foodMenu = document.getElementById('food-menu');
+            const beveragesMenu = document.getElementById('beverages-menu');
+            const foodTab = document.getElementById('food-tab');
+            const beveragesTab = document.getElementById('beverages-tab');
+
+            if (section === 'food') {
+                foodMenu.style.display = 'block';
+                beveragesMenu.style.display = 'none';
+                foodTab.classList.remove('btn-secondary');
+                foodTab.classList.add('btn-primary');
+                beveragesTab.classList.remove('btn-primary');
+                beveragesTab.classList.add('btn-secondary');
+            } else {
+                foodMenu.style.display = 'none';
+                beveragesMenu.style.display = 'block';
+                beveragesTab.classList.remove('btn-secondary');
+                beveragesTab.classList.add('btn-primary');
+                foodTab.classList.remove('btn-primary');
+                foodTab.classList.add('btn-secondary');
+            }
+        }
+
+        // Initialize with food menu visible
+        showMenuSection('food');
     </script>
 </body>
 </html>
